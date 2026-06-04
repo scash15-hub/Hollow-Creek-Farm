@@ -10,17 +10,33 @@ body{
     color:#111;
 }
 
+h3 {
+    font-family: "farmhand-inline", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h2 {
+    font-family: "farmhand-inline", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
 /* NAV */
 
 nav{
     width:95%;
     margin:20px auto;
-    background:#f4ecd8;
-    border:3px solid #2b7fff;
+    background:#F5ECD6;
+    border:30px solid #CEA857;
+    border-radius:25px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:10px 25px;
+    font-family: "drunk-cowboy", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .logo img{
@@ -46,11 +62,16 @@ nav a{
     border-radius:12px;
 }
 
+p{
+    font-family: "ff-market-web", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 /* HERO */
 
 .hero{
     min-height:90vh;
-    background:url("images/hero-bg.jpg") center/cover;
+    background:url("homebg.png") center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -68,6 +89,9 @@ nav a{
 .hero-box h1{
     font-size:4rem;
     margin-bottom:20px;
+    font-family: "farmhand", serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .divider{
