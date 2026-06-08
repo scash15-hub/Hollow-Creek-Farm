@@ -22,6 +22,11 @@ font-weight: 400;
 font-style: normal;
 }
 
+a{
+   font-family: "farmhand-inline", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 /* NAV */
 
 nav{
@@ -298,4 +303,22 @@ footer p{
     .hero-box p{
         font-size:1.3rem;
     }
+}
+
+.map {
+  height: 1000px; /* required */
+  margin: 0 auto;
+margin-top: 50px;
+  background-image: url("Map.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 30px solid #CEA857;
+}
+
+.map-bg {
+  background-image: url("map-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
