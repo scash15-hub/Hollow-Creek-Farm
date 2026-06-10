@@ -1,324 +1,435 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* CSS VARIABLES — Brand Colors & Typography */
+:root {
+  --hcf-cream:        #F5ECD6;
+  --hcf-gold:         #CEA857;
+  --hcf-green:        #304d18;
+  --hcf-green-light:  #4a7324;
+  --hcf-brown:        #6b4226;
+  --hcf-text:         #2b1f0f;
+  --hcf-text-soft:    #5c4a30;
+  --hcf-white:        #ffffff;
+
+  /* Season accent colors */
+  --hcf-spring:       #7dab5a;
+  --hcf-summer:       #e5a825;
+  --hcf-fall:         #c0561e;
+  --hcf-winter:       #4a7a9b;
+
+  --hcf-radius:       20px;
+  --hcf-radius-lg:    32px;
+  --hcf-shadow:       0 4px 24px rgba(0,0,0,0.10);
 }
 
-body{
-    font-family:"industry-inc-3d", sans-serif;
-    background:#ececec;
-    color:#111;
+/* BASE RESET & BODY */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h3 {
-    font-family: "farmhand-inline", sans-serif;
-font-weight: 400;
-font-style: normal;
+body {
+  font-family: "ff-market-web", Georgia, serif;
+  background: var(--hcf-cream);
+  color: var(--hcf-text);
+  overflow-x: hidden;
 }
 
-h2 {
-    font-family: "farmhand-inline", sans-serif;
-font-weight: 400;
-font-style: normal;
+p {
+  font-family: "ff-market-web", Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--hcf-text-soft);
 }
 
-a{
-   font-family: "farmhand-inline", sans-serif;
-font-weight: 400;
-font-style: normal;
+h1 {
+    font-family: "farmhand-inline", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--hcf-text);
+    font-size: clamp(2.5rem, 5vw, 4rem);
 }
+h2, h3 {
+  font-family: "farmhand-inline", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--hcf-text);
+}
+
+a {
+  font-family: "farmhand-inline", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* BUTTONS */
+.hcf-btn-green {
+  background: var(--hcf-green);
+  color: var(--hcf-white);
+  border: 2px solid var(--hcf-green);
+  border-radius: 12px;
+  padding: 14px 36px;
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+.hcf-btn-green:hover,
+.hcf-btn-green:focus {
+  background: var(--hcf-green-light);
+  border-color: var(--hcf-green-light);
+  color: var(--hcf-white);
+  transform: translateY(-2px);
+}
+
+.hcf-btn-gold {
+  background: var(--hcf-gold);
+  color: var(--hcf-text);
+  border: 2px solid var(--hcf-gold);
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+.hcf-btn-gold:hover,
+.hcf-btn-gold:focus {
+  background: #b8922f;
+  border-color: #b8922f;
+  color: var(--hcf-text);
+  transform: translateY(-2px);
+}
+
+.hcf-btn-cream {
+  background: var(--hcf-cream);
+  color: var(--hcf-green);
+  border: 2px solid var(--hcf-cream);
+  border-radius: 12px;
+  padding: 14px 40px;
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+.hcf-btn-cream:hover,
+.hcf-btn-cream:focus {
+  background: var(--hcf-gold);
+  border-color: var(--hcf-gold);
+  color: var(--hcf-text);
+  transform: translateY(-2px);
+}
+
 /* NAV */
-
-nav{
-    width:95%;
-    margin:20px auto;
-    background:#F5ECD6;
-    border:30px solid #CEA857;
-    border-radius:25px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 25px;
-    font-family: "drunk-cowboy", sans-serif;
-font-weight: 400;
-font-style: normal;
+.hcf-nav {
+  background: var(--hcf-cream);
+  border: 6px solid var(--hcf-gold);
+  border-radius: var(--hcf-radius-lg);
+  margin: 16px 16px 0;
+  padding: 10px 20px;
+  box-shadow: var(--hcf-shadow);
+  top: 10px;
+  z-index: 1000;
+  margin-bottom: 30px;
 }
 
-.logo img{
-    width:70px;
+.nav-logo {
+  width: 64px;
+  height: auto;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:40px;
+.hcf-nav .nav-link {
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1.25rem;
+  color: var(--hcf-text);
+  padding: 6px 4px;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-nav a{
-    text-decoration:none;
-    color:black;
-    font-size:1.8rem;
+/* Underline hover effect on nav links */
+.hcf-nav .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--hcf-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  margin-top: 2px;
+}
+.hcf-nav .nav-link:hover,
+.hcf-nav .nav-link:focus {
+  color: var(--hcf-green);
+}
+.hcf-nav .nav-link:hover::after,
+.hcf-nav .nav-link:focus::after {
+  transform: scaleX(1);
 }
 
-.visit-btn{
-    background:#304d18;
-    color:white;
-    padding:12px 24px;
-    border-radius:12px;
+/* Hamburger button */
+.hcf-toggler {
+  border: 2px solid var(--hcf-gold);
+  border-radius: 8px;
+}
+.hcf-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(206,168,87,0.4);
 }
 
-p{
-    font-family: "ff-market-web", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-/* HERO */
-
-.hero{
-    min-height:90vh;
-    background:url("homebg.png") center/cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+/* SHARED SECTION TYPOGRAPHY */
+.section-eyebrow {
+  display: inline-block;
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--hcf-gold);
+  margin-bottom: 8px;
 }
 
-.hero-box{
-    background:rgba(244,236,216,.92);
-    width:80%;
-    max-width:1000px;
-    padding:60px;
-    border-radius:35px;
-    text-align:center;
+.section-heading {
+  font-family: "farmhand-inline", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--hcf-text);
 }
 
-.hero-box h1{
-    font-size:4rem;
-    margin-bottom:20px;
-    font-family: "farmhand", serif;
-font-weight: 400;
-font-style: normal;
+.section-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--hcf-text-soft);
+  margin-bottom: 12px;
 }
 
-.divider{
-    display:block;
-    margin:20px auto;
-    max-width:100%;
-    height:auto;
+/* HERO SECTION */
+.hero-section {
+  min-height: 92vh;
+  background: url("homebg.png") center / cover no-repeat;
+  /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
-.hero-box p{
-    font-size:2rem;
-    line-height:1.5;
-    margin-bottom:30px;
+.hero-overlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.main-btn{
-    display:inline-block;
-    background:#304d18;
-    color:white;
-    text-decoration:none;
-    padding:18px 45px;
-    border-radius:12px;
-    font-size:1.8rem;
+.hero-card {
+  background: rgba(245, 236, 214, 0.93);
+  border: 5px solid var(--hcf-gold);
+  border-radius: var(--hcf-radius-lg);
+  max-width: 700px;
+  width: 100%;
+  padding: 60px 48px;
+  text-align: center;
+  box-shadow: var(--hcf-shadow);
 }
 
-/* WELCOME */
-
-.welcome{
-    max-width:1300px;
-    margin:100px auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
+.hero-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 16px;
 }
 
-.welcome img{
-    width:100%;
-    border-radius:20px;
+.divider-img {
+  display: block;
+  margin: 16px auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.welcome-text h2{
-    font-size:3rem;
-    margin-bottom:20px;
+.hero-tagline {
+  font-family: "farmhand", serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: var(--hcf-text);
+  margin-bottom: 32px;
+  line-height: 1.4;
 }
 
-.welcome-text p{
-    font-size:1.3rem;
-    line-height:1.8;
+/* WELCOME SECTION */
+.welcome-section {
+  padding: 100px 0;
+  background: var(--hcf-cream);
 }
 
-/* FEATURES */
-
-.features{
-    max-width:1300px;
-    margin:100px auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+.welcome-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: var(--hcf-radius);
+  box-shadow: var(--hcf-shadow);
 }
 
-.feature-card{
-    background:#f4ecd8;
-    padding:40px;
-    border-radius:20px;
-    text-align:center;
+/* SEASONAL HIGHLIGHTS */
+.seasons-section {
+  padding: 100px 0;
+  background: #fff8ed;
 }
 
-.feature-card h3{
-    font-size:2rem;
-    margin-bottom:15px;
+.season-card {
+  background: var(--hcf-cream);
+  border-radius: var(--hcf-radius);
+  padding: 36px 28px;
+  height: 100%;
+  border-top: 6px solid transparent;
+  box-shadow: var(--hcf-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.season-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
 }
 
-.feature-card p{
-    font-size:1.1rem;
+.season-spring { border-top-color: var(--hcf-spring); }
+.season-summer { border-top-color: var(--hcf-summer); }
+.season-fall   { border-top-color: var(--hcf-fall); }
+.season-winter { border-top-color: var(--hcf-winter); }
+
+.season-label {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+.season-spring .season-label { color: var(--hcf-spring); }
+.season-summer .season-label { color: var(--hcf-summer); }
+.season-fall   .season-label { color: var(--hcf-fall); }
+.season-winter .season-label { color: var(--hcf-winter); }
+
+.season-title {
+  font-family: "farmhand-inline", serif;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
 }
 
-/* EVENTS */
-
-.events{
-    padding:100px 5%;
-    text-align:center;
+.season-card p {
+  font-size: 0.98rem;
 }
 
-.events h2{
-    font-size:3rem;
-    margin-bottom:50px;
+/* EVENTS PREVIEW */
+.events-preview-section {
+  padding: 100px 0;
+  background: var(--hcf-cream);
 }
 
-.event-container{
-    display:flex;
-    justify-content:center;
-    gap:30px;
+.event-preview-card {
+  background: var(--hcf-white);
+  border: 2px solid #e8d9bc;
+  border-radius: var(--hcf-radius);
+  padding: 36px 28px;
+  height: 100%;
+  position: relative;
+  box-shadow: var(--hcf-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.event-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
 }
 
-.event-card{
-    background:white;
-    width:300px;
-    padding:40px;
-    border-radius:20px;
+.event-preview-card h3 {
+  font-family: "farmhand-inline", serif;
+  font-size: 1.5rem;
+  margin: 10px 0 6px;
 }
 
-/* GALLERY */
-
-.gallery{
-    padding:100px 5%;
-    text-align:center;
+.event-dates {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hcf-gold);
+  margin-bottom: 10px;
 }
 
-.gallery h2{
-    font-size:3rem;
-    margin-bottom:40px;
+.event-season-tag {
+  display: inline-block;
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 30px;
+  color: var(--hcf-white);
+  margin-bottom: 4px;
+}
+.tag-spring { background: var(--hcf-spring); }
+.tag-summer { background: var(--hcf-summer); }
+.tag-fall   { background: var(--hcf-fall); }
+.tag-winter { background: var(--hcf-winter); }
+
+/* FARM STORE TEASER */
+.store-teaser-section {
+  padding: 100px 0;
+  background: #fff8ed;
 }
 
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+/* CTA BANNER */
+.cta-section {
+  background: var(--hcf-green);
+  color: var(--hcf-white);
+  padding: 100px 20px;
 }
 
-.gallery-grid img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:15px;
+.cta-section h2 {
+  font-family: "farmhand-inline", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--hcf-white);
+  margin-bottom: 16px;
 }
 
-/* CTA */
-
-.cta{
-    background:#304d18;
-    color:white;
-    text-align:center;
-    padding:100px 20px;
-}
-
-.cta h2{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.cta p{
-    font-size:1.3rem;
-    margin-bottom:30px;
+.cta-section p {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 32px;
 }
 
 /* FOOTER */
-
-footer{
-    text-align:center;
-    padding:50px 20px;
-    background:#f4ecd8;
+.site-footer {
+  background: var(--hcf-cream);
+  border-top: 5px solid var(--hcf-gold);
+  padding: 60px 20px 40px;
+  text-align: center;
 }
 
-footer img{
-    width:90px;
-    margin-bottom:15px;
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 16px;
 }
 
-footer h3{
-    font-size:2rem;
-    margin-bottom:10px;
+.footer-name {
+  font-family: "farmhand-inline", serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
-footer p{
-    margin:8px 0;
+.site-footer p {
+  font-size: 0.95rem;
+  color: var(--hcf-text-soft);
 }
 
-/* MOBILE */
-
-@media(max-width:900px){
-
-    nav{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .welcome{
-        grid-template-columns:1fr;
-    }
-
-    .features{
-        grid-template-columns:1fr;
-    }
-
-    .event-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .gallery-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .hero-box h1{
-        font-size:2.5rem;
-    }
-
-    .hero-box p{
-        font-size:1.3rem;
-    }
+.footer-social a {
+  font-family: "farmhand-inline", serif;
+  font-size: 1rem;
+  color: var(--hcf-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-social a:hover {
+  color: var(--hcf-green);
 }
 
-.map {
-  height: 1000px; /* required */
-  margin: 0 auto;
-margin-top: 50px;
-  background-image: url("Map.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 30px solid #CEA857;
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
-.map-bg {
-  background-image: url("map-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
