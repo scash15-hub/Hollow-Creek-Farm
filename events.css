@@ -85,10 +85,10 @@
 }
 
 /* Season-tinted active states */
-.filter-spring.active { background: var(--hcf-spring); border-color: var(--hcf-spring); color: #fff; }
-.filter-summer.active { background: var(--hcf-summer); border-color: var(--hcf-summer); color: #2b1f0f; }
-.filter-fall.active   { background: var(--hcf-fall);   border-color: var(--hcf-fall);   color: #fff; }
-.filter-winter.active { background: var(--hcf-winter); border-color: var(--hcf-winter); color: #fff; }
+.filter-spring.active { background: #d4896a; border-color: #d4896a;}
+.filter-summer.active { background: #d4920a; border-color: #d4920a;}
+.filter-fall.active   { background: #a8441a;   border-color: #a8441a;}
+.filter-winter.active { background: #6b7c5e; border-color: #6b7c5e;}
 
 /* EVENT CARDS */
 .event-card {
@@ -109,10 +109,11 @@
 }
 
 /* Season-colored bottom border */
-.season-border-spring { border-bottom-color: var(--hcf-spring); }
-.season-border-summer { border-bottom-color: var(--hcf-summer); }
-.season-border-fall   { border-bottom-color: var(--hcf-fall); }
-.season-border-winter { border-bottom-color: var(--hcf-winter); }
+.season-border-spring { border-bottom-color: #d4896a; }
+.season-border-summer { border-bottom-color: #d4920a; }
+.season-border-fall   { border-bottom-color: #a8441a; }
+.season-border-winter { border-bottom-color: #6b7c5e; }
+
 
 /* Card image */
 .event-card-img-wrap {
