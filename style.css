@@ -286,10 +286,10 @@ a {
   box-shadow: 0 8px 32px rgba(0,0,0,0.13);
 }
 
-.season-spring { border-top-color: var(--hcf-spring); }
-.season-summer { border-top-color: var(--hcf-summer); }
-.season-fall   { border-top-color: var(--hcf-fall); }
-.season-winter { border-top-color: var(--hcf-winter); }
+.season-spring { border-top-color: #d4896a; }
+.season-summer { border-top-color: #d4920a; }
+.season-fall   { border-top-color: #a8441a; }
+.season-winter { border-top-color: #6b7c5e; }
 
 .season-label {
   font-family: "industry-inc-3d", sans-serif;
@@ -299,10 +299,10 @@ a {
   margin-bottom: 10px;
   opacity: 0.7;
 }
-.season-spring .season-label { color: var(--hcf-spring); }
-.season-summer .season-label { color: var(--hcf-summer); }
-.season-fall   .season-label { color: var(--hcf-fall); }
-.season-winter .season-label { color: var(--hcf-winter); }
+.season-spring .season-label { color: #d4896a; }
+.season-summer .season-label { color: #d4920a; }
+.season-fall   .season-label { color: #a8441a; }
+.season-winter .season-label { color: #6b7c5e; }
 
 .season-title {
   font-family: "farmhand-inline", serif;
@@ -314,57 +314,6 @@ a {
   font-size: 0.98rem;
 }
 
-/* EVENTS PREVIEW */
-.events-preview-section {
-  padding: 100px 0;
-  background: var(--hcf-cream);
-}
-
-.event-preview-card {
-  background: var(--hcf-white);
-  border: 2px solid #e8d9bc;
-  border-radius: var(--hcf-radius);
-  padding: 36px 28px;
-  height: 100%;
-  position: relative;
-  box-shadow: var(--hcf-shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.event-preview-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
-}
-
-.event-preview-card h3 {
-  font-family: "farmhand-inline", serif;
-  font-size: 1.5rem;
-  margin: 10px 0 6px;
-}
-
-.event-dates {
-  font-family: "industry-inc-3d", sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--hcf-gold);
-  margin-bottom: 10px;
-}
-
-.event-season-tag {
-  display: inline-block;
-  font-family: "industry-inc-3d", sans-serif;
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 30px;
-  color: var(--hcf-white);
-  margin-bottom: 4px;
-}
-.tag-spring { background: var(--hcf-spring); }
-.tag-summer { background: var(--hcf-summer); }
-.tag-fall   { background: var(--hcf-fall); }
-.tag-winter { background: var(--hcf-winter); }
 
 /* FARM STORE TEASER */
 .store-teaser-section {

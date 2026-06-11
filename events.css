@@ -8,7 +8,7 @@
 }
 
 .events-hero {
-  background: url("images/events/hero-events-bg.png") center / cover no-repeat;
+  background: url("eventbanner.png") center / cover no-repeat;
   /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 }
 
@@ -28,7 +28,7 @@
 }
 
 .page-hero-content .section-eyebrow {
-  color: var(--hcf-gold);
+  color: var(--hcf-brown);
 }
 
 .page-hero-content h1 {
@@ -153,10 +153,10 @@
   margin-bottom: 12px;
 }
 
-.tag-spring { background: var(--hcf-spring); }
-.tag-summer { background: var(--hcf-summer); color: var(--hcf-text); }
-.tag-fall   { background: var(--hcf-fall); }
-.tag-winter { background: var(--hcf-winter); }
+.tag-spring { background: #d4896a; }
+.tag-summer { background: #d4920a; }
+.tag-fall   { background: #a8441a; }
+.tag-winter { background: #6b7c5e; }
 
 .event-card-title {
   font-family: "farmhand-inline", serif;
