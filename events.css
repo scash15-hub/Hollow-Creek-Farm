@@ -1,0 +1,213 @@
+/* PAGE HERO */
+.page-hero {
+  min-height: 42vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.events-hero {
+  background: url("images/events/hero-events-bg.png") center / cover no-repeat;
+  /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+}
+
+/* Dark overlay for text readability */
+.events-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 12, 4, 0.65) 0%, rgba(20,12,4,0.15) 60%);
+  border-radius: 0;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.page-hero-content .section-eyebrow {
+  color: var(--hcf-gold);
+}
+
+.page-hero-content h1 {
+  color: var(--hcf-white);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.page-hero-content p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+/* EVENTS SECTION WRAPPER */
+.events-section {
+  padding: 80px 0 100px;
+  background: var(--hcf-cream);
+}
+
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.filter-btn {
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1.05rem;
+  padding: 10px 28px;
+  border-radius: 40px;
+  border: 2px solid var(--hcf-gold);
+  background: transparent;
+  color: var(--hcf-text);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.filter-btn:hover {
+  background: var(--hcf-gold);
+  color: var(--hcf-text);
+  transform: translateY(-2px);
+}
+
+/* Active state — default (All) */
+.filter-btn.active {
+  background: var(--hcf-green);
+  border-color: var(--hcf-green);
+  color: var(--hcf-white);
+}
+
+/* Season-tinted active states */
+.filter-spring.active { background: var(--hcf-spring); border-color: var(--hcf-spring); color: #fff; }
+.filter-summer.active { background: var(--hcf-summer); border-color: var(--hcf-summer); color: #2b1f0f; }
+.filter-fall.active   { background: var(--hcf-fall);   border-color: var(--hcf-fall);   color: #fff; }
+.filter-winter.active { background: var(--hcf-winter); border-color: var(--hcf-winter); color: #fff; }
+
+/* EVENT CARDS */
+.event-card {
+  background: var(--hcf-white);
+  border-radius: var(--hcf-radius);
+  overflow: hidden;
+  height: 100%;
+  box-shadow: var(--hcf-shadow);
+  border-bottom: 5px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.14);
+}
+
+/* Season-colored bottom border */
+.season-border-spring { border-bottom-color: var(--hcf-spring); }
+.season-border-summer { border-bottom-color: var(--hcf-summer); }
+.season-border-fall   { border-bottom-color: var(--hcf-fall); }
+.season-border-winter { border-bottom-color: var(--hcf-winter); }
+
+/* Card image */
+.event-card-img-wrap {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #e8dcc8;
+}
+
+.event-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.event-card:hover .event-card-img {
+  transform: scale(1.04);
+}
+
+/* Card body */
+.event-card-body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.event-tag {
+  display: inline-block;
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 30px;
+  color: var(--hcf-white);
+  margin-bottom: 12px;
+}
+
+.tag-spring { background: var(--hcf-spring); }
+.tag-summer { background: var(--hcf-summer); color: var(--hcf-text); }
+.tag-fall   { background: var(--hcf-fall); }
+.tag-winter { background: var(--hcf-winter); }
+
+.event-card-title {
+  font-family: "farmhand-inline", serif;
+  font-size: 1.45rem;
+  margin-bottom: 6px;
+  color: var(--hcf-text);
+}
+
+.event-card-dates {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hcf-gold);
+  margin-bottom: 10px;
+}
+
+.event-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--hcf-text-soft);
+  margin: 0;
+}
+
+/* EMPTY STATE */
+.events-empty {
+  text-align: center;
+  font-family: "farmhand-inline", serif;
+  font-size: 1.4rem;
+  color: var(--hcf-text-soft);
+  padding: 60px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 575px) {
+  .page-hero {
+    padding: 40px 24px;
+    min-height: 36vh;
+  }
+
+  .filter-bar {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .filter-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+
+  .event-card-img-wrap {
+    height: 180px;
+  }
+}
