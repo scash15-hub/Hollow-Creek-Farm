@@ -1,0 +1,256 @@
+/* PAGE HERO */
+.page-hero {
+  min-height: 42vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.store-hero {
+  background: url("images/store-hero.png") center / cover no-repeat;
+  /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+}
+
+.store-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 12, 4, 0.70) 0%, rgba(20,12,4,0.10) 60%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.page-hero-content .section-eyebrow {
+  color: var(--hcf-gold);
+}
+
+.page-hero-content h1 {
+  color: var(--hcf-white);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.page-hero-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+/* STORE SECTION */
+.store-section {
+  padding: 80px 0 100px;
+  background: var(--hcf-cream);
+}
+
+/* HOURS BAR */
+.store-hours-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: var(--hcf-green);
+  color: var(--hcf-white);
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 40px;
+  margin-bottom: 48px;
+}
+
+.hours-divider {
+  opacity: 0.45;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.filter-btn {
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1rem;
+  padding: 10px 24px;
+  border-radius: 40px;
+  border: 2px solid var(--hcf-gold);
+  background: transparent;
+  color: var(--hcf-text);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.filter-btn:hover {
+  background: var(--hcf-gold);
+  color: var(--hcf-text);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--hcf-green);
+  border-color: var(--hcf-green);
+  color: var(--hcf-white);
+}
+
+/* PRODUCT CARDS */
+.product-card {
+  background: var(--hcf-cream);
+  border: 2px solid #e0d0b0;
+  border-radius: var(--hcf-radius);
+  overflow: hidden;
+  height: 100%;
+  box-shadow: var(--hcf-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.13);
+}
+
+/* Card image */
+.product-card-img-wrap {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #ddd0b8;
+}
+
+.product-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card-img {
+  transform: scale(1.04);
+}
+
+/* Card body */
+.product-card-body {
+  padding: 22px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Category tag */
+.product-tag {
+  display: inline-block;
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.60rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 30px;
+  background: var(--hcf-gold);
+  color: var(--hcf-text);
+  margin-bottom: 12px;
+}
+
+.product-card-title {
+  font-family: "farmhand-inline", serif;
+  font-size: 1.45rem;
+  margin-bottom: 6px;
+  color: var(--hcf-text);
+}
+
+.product-display-note {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hcf-green);
+  margin-bottom: 10px;
+}
+
+.product-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--hcf-text-soft);
+  margin: 0;
+}
+
+/* Add to Cart button */
+.product-cart-btn {
+  margin-top: auto;
+  padding-top: 18px;
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  background: var(--hcf-green);
+  color: var(--hcf-white);
+  border: 2px solid var(--hcf-green);
+  border-radius: 12px;
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.product-cart-btn:hover {
+  background: var(--hcf-green-light);
+  border-color: var(--hcf-green-light);
+  transform: translateY(-2px);
+}
+
+.product-cart-btn.added {
+  background: var(--hcf-gold);
+  border-color: var(--hcf-gold);
+  color: var(--hcf-text);
+}
+
+/* EMPTY STATE */
+.store-empty {
+  text-align: center;
+  font-family: "farmhand-inline", serif;
+  font-size: 1.4rem;
+  color: var(--hcf-text-soft);
+  padding: 60px 0;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .page-hero {
+    padding: 40px 24px;
+    min-height: 36vh;
+  }
+
+  .store-hours-bar {
+    font-size: 0.68rem;
+    padding: 12px 20px;
+    gap: 8px;
+  }
+
+  .hours-divider {
+    display: none;
+  }
+
+  .filter-bar {
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .filter-btn {
+    font-size: 0.88rem;
+    padding: 8px 16px;
+  }
+
+  .product-card-img-wrap {
+    height: 180px;
+  }
+}

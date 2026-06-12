@@ -164,7 +164,6 @@ const createCard = (event) => {
   img.src = event.image;
   img.alt = event.name + " at Hollow Creek Farm";
   img.className = "event-card-img";
-  // Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use.
 
   imgWrap.appendChild(img);
 
