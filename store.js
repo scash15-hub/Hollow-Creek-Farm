@@ -46,7 +46,7 @@ const farmProducts = [
     name: "Apple Pie",
     category: "baked goods",
     description: "Farm-made pie baked with seasonal apples. A Hollow Creek Farm favorite every fall.",
-    image: "images/products/product-apple-pie.png",
+    image: "pie.png",
     displayNote: "Weekends only"
   },
   {

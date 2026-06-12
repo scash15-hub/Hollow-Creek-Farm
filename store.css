@@ -8,7 +8,7 @@
 }
 
 .store-hero {
-  background: url("images/store-hero.png") center / cover no-repeat;
+  background: url("storebanner.png") center / cover no-repeat;
   /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 }
 
@@ -26,7 +26,7 @@
 }
 
 .page-hero-content .section-eyebrow {
-  color: var(--hcf-gold);
+  color: var(--hcf-brown);
 }
 
 .page-hero-content h1 {
@@ -124,16 +124,21 @@
 /* Card image */
 .product-card-img-wrap {
   width: 100%;
-  height: 210px;
+  height: 220px;
   overflow: hidden;
-  background: #ddd0b8;
+  background: #f5f1e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-card-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.4s ease;
+  padding: 12px;
 }
 
 .product-card:hover .product-card-img {
