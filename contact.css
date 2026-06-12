@@ -1,0 +1,276 @@
+/* PAGE HERO */
+.page-hero {
+  min-height: 42vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.contact-hero {
+  background: url("contactbanner.png") center / cover no-repeat;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 12, 4, 0.70) 0%, rgba(20,12,4,0.10) 60%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.page-hero-content .section-eyebrow {
+  color: var(--hcf-gold);
+}
+
+.page-hero-content h1 {
+  color: var(--hcf-white);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+
+.page-hero-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+/* VISIT INFO SECTION */
+.visit-section {
+  padding: 100px 0;
+  background: var(--hcf-cream);
+}
+
+/* Info blocks — address, phone, email, social */
+.info-block {
+  margin-bottom: 32px;
+}
+
+.info-label {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hcf-gold);
+  margin-bottom: 6px;
+}
+
+.info-block p {
+  font-size: 1.05rem;
+  color: var(--hcf-text-soft);
+  margin: 0;
+}
+
+.info-block a {
+  color: var(--hcf-text-soft);
+  text-decoration: none;
+  font-family: "ff-market-web", Georgia, serif;
+  transition: color 0.2s ease;
+}
+
+.info-block a:hover {
+  color: var(--hcf-green);
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.social-links a {
+  font-family: "drunk-cowboy", sans-serif;
+  font-size: 1rem;
+  color: var(--hcf-white);
+  background: var(--hcf-green);
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.social-links a:hover {
+  background: var(--hcf-green-light);
+  transform: translateY(-2px);
+}
+
+/* HOURS TABLE */
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "ff-market-web", Georgia, serif;
+}
+
+.hours-table thead tr {
+  background: var(--hcf-green);
+  color: var(--hcf-white);
+}
+
+.hours-table thead th {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.hours-table tbody tr {
+  border-bottom: 1px solid #e0d0b0;
+  transition: background 0.15s ease;
+}
+
+.hours-table tbody tr:nth-child(even) {
+  background: #fff8ed;
+}
+
+.hours-table tbody tr:hover {
+  background: #f0e4cc;
+}
+
+.hours-table tbody td {
+  padding: 16px 20px;
+  font-size: 0.98rem;
+  color: var(--hcf-text-soft);
+  vertical-align: top;
+}
+
+.hours-table tbody td:first-child {
+  font-family: "farmhand-inline", serif;
+  font-size: 1.05rem;
+  color: var(--hcf-text);
+}
+
+/* Season tag inside table */
+.hours-tag {
+  display: inline-block;
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--hcf-gold);
+  color: var(--hcf-text);
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* CONTACT FORM SECTION */
+.form-section {
+  padding: 100px 0;
+  background: #fff8ed;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.form-group label {
+  font-family: "industry-inc-3d", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hcf-text-soft);
+}
+
+/* Input and textarea */
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #e0d0b0;
+  border-radius: 12px;
+  background: var(--hcf-cream);
+  font-family: "ff-market-web", Georgia, serif;
+  font-size: 1rem;
+  color: var(--hcf-text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+
+.form-input::placeholder {
+  color: #b0a08a;
+}
+
+.form-input:focus {
+  border-color: var(--hcf-gold);
+  box-shadow: 0 0 0 3px rgba(206, 168, 87, 0.25);
+}
+
+/* Error state */
+.form-input.input-error {
+  border-color: #c0561e;
+}
+
+/* Error message */
+.form-error {
+  font-family: "ff-market-web", Georgia, serif;
+  font-size: 0.85rem;
+  color: #c0561e;
+  display: none;
+}
+
+.form-error.visible {
+  display: block;
+}
+
+/* Submit button */
+.submit-btn {
+  font-size: 1.2rem;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+/* Success message */
+.form-success {
+  background: var(--hcf-green);
+  color: var(--hcf-white);
+  border-radius: 12px;
+  padding: 18px 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.form-success p {
+  color: var(--hcf-white);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 575px) {
+  .page-hero {
+    padding: 40px 24px;
+    min-height: 36vh;
+  }
+
+  .hours-table thead th,
+  .hours-table tbody td {
+    padding: 12px 12px;
+    font-size: 0.88rem;
+  }
+
+  .hours-tag {
+    display: block;
+    margin: 4px 0 0;
+  }
+}
