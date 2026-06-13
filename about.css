@@ -10,6 +10,7 @@
 .about-hero {
   background: url("aboutbanner.png") center / cover no-repeat;
 }
+/*Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use.*/
 
 .about-hero::before {
   content: "";

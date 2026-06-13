@@ -7,142 +7,160 @@ const farmEvents = [
     image: "sunflower.png",
     dates: "Mid-May through June"
   },
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Strawberry Picking",
-    season: "spring",
-    description: "Pick fresh strawberries right from the field during weekend U-Pick events.",
-    image: "strawberry.png",
-    dates: "April through June weekends"
-  },
+{
+  name: "Strawberry Picking",
+  season: "spring",
+  description: "Pick fresh strawberries right from the field during weekend U-Pick events.",
+  image: "strawberry.png",
+  dates: "April through June weekends"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Asparagus Picking",
-    season: "spring",
-    description: "Harvest fresh asparagus straight from the field during our spring U-Pick season.",
-    image: "asparagus.png",
-    dates: "April through June weekends"
-  },
+{
+  name: "Asparagus Picking",
+  season: "spring",
+  description: "Harvest fresh asparagus straight from the field during our spring U-Pick season.",
+  image: "asparagus.png",
+  dates: "April through June weekends"
+},
+  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
 
-  {
-    name: "Baby Animal Visits",
-    season: "spring",
-    description: "Meet chicks, ducklings, and baby goats in the barn during the spring season.",
-    image: "baby.png",
-    dates: "April through June"
-  },
+{
+  name: "Baby Animal Visits",
+  season: "spring",
+  description: "Meet chicks, ducklings, and baby goats in the barn during the spring season.",
+  image: "baby.png",
+  dates: "April through June"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Garden Seedlings & Transplants",
-    season: "spring",
-    description: "Shop vegetable plants, flowers, and garden starters for your home garden.",
-    image: "seeding.png",
-    dates: "April through June"
-  },
+{
+  name: "Garden Seedlings & Transplants",
+  season: "spring",
+  description: "Shop vegetable plants, flowers, and garden starters for your home garden.",
+  image: "seeding.png",
+  dates: "April through June"
+},
+  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
 
-  {
-    name: "Blueberry Picking",
-    season: "summer",
-    description: "Pick fresh blueberries at peak ripeness in our berry fields.",
-    image: "blueberry.png",
-    dates: "July through early August"
-  },
+{
+  name: "Blueberry Picking",
+  season: "summer",
+  description: "Pick fresh blueberries at peak ripeness in our berry fields.",
+  image: "blueberry.png",
+  dates: "July through early August"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Summer Produce Market",
-    season: "summer",
-    description: "Fresh tomatoes, zucchini, cucumbers, peppers, sweet corn, and green beans available daily.",
-    image: "produce.png",
-    dates: "July through August"
-  },
+{
+  name: "Summer Produce Market",
+  season: "summer",
+  description: "Fresh tomatoes, zucchini, cucumbers, peppers, sweet corn, and green beans available daily.",
+  image: "produce.png",
+  dates: "July through August"
+},
+  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
 
-  {
-    name: "Sunflower Picking",
-    season: "summer",
-    description: "Enjoy the second sunflower bloom and cut your own bouquet.",
-    image: "sunflower.png",
-    dates: "Late July"
-  },
+{
+  name: "Sunflower Picking",
+  season: "summer",
+  description: "Enjoy the second sunflower bloom and cut your own bouquet.",
+  image: "sunflower.png",
+  dates: "Late July"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Farm-to-Table Dinner",
-    season: "summer",
-    description: "Ticketed outdoor dinners featuring ingredients grown right here on the farm.",
-    image: "dinner.png",
-    dates: "Select Saturday evenings"
-  },
+{
+  name: "Farm-to-Table Dinner",
+  season: "summer",
+  description: "Ticketed outdoor dinners featuring ingredients grown right here on the farm.",
+  image: "dinner.png",
+  dates: "Select Saturday evenings"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Corn Maze",
-    season: "fall",
-    description: "Explore our 5-acre corn maze featuring a brand-new design every year.",
-    image: "corn.png",
-    dates: "Labor Day through November"
-  },
+{
+  name: "Corn Maze",
+  season: "fall",
+  description: "Explore our 5-acre corn maze featuring a brand-new design every year.",
+  image: "corn.png",
+  dates: "Labor Day through November"
+},
+  // Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Pumpkin Patch",
-    season: "fall",
-    description: "Choose from over 20 pumpkin varieties with U-Pick and pre-picked options.",
-    image: "pumpkin.png",
-    dates: "September through November"
-  },
+{
+  name: "Pumpkin Patch",
+  season: "fall",
+  description: "Choose from over 20 pumpkin varieties with U-Pick and pre-picked options.",
+  image: "pumpkin.png",
+  dates: "September through November"
+},
+  // Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. 
 
-  {
-    name: "Hayrides",
-    season: "fall",
-    description: "Take a relaxing tractor-pulled ride around the farm and enjoy the fall scenery.",
-    image: "hayride.png",
-    dates: "Weekends through October"
-  },
+{
+  name: "Hayrides",
+  season: "fall",
+  description: "Take a relaxing tractor-pulled ride around the farm and enjoy the fall scenery.",
+  image: "hayride.png",
+  dates: "Weekends through October"
+},
+  // Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Apple Cider Pressing",
-    season: "fall",
-    description: "Watch apples being pressed into fresh cider and take a jug home.",
-    image: "cider.png",
-    dates: "September through November"
-  },
+{
+  name: "Apple Cider Pressing",
+  season: "fall",
+  description: "Watch apples being pressed into fresh cider and take a jug home.",
+  image: "cider.png",
+  dates: "September through November"
+},
+  // Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Fall Harvest Festival",
-    season: "fall",
-    description: "Enjoy food vendors, live music, crafts, and family activities during our biggest event of the year.",
-    image: "harvest.png",
-    dates: "Last two weekends of October"
-  },
+{
+  name: "Fall Harvest Festival",
+  season: "fall",
+  description: "Enjoy food vendors, live music, crafts, and family activities during our biggest event of the year.",
+  image: "harvest.png",
+  dates: "Last two weekends of October"
+},
+  // Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Fall Decorations",
-    season: "fall",
-    description: "Browse gourds, Indian corn, mums, and seasonal decorations for your home.",
-    image: "decor.png",
-    dates: "September through November"
-  },
+{
+  name: "Fall Decorations",
+  season: "fall",
+  description: "Browse gourds, Indian corn, mums, and seasonal decorations for your home.",
+  image: "decor.png",
+  dates: "September through November"
+},
+  // Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
 
-  {
-    name: "Holiday Market",
-    season: "winter",
-    description: "Shop local artisans, farm-made gifts, and holiday decorations.",
-    image: "holiday.png",
-    dates: "First three weekends of December"
-  },
+{
+  name: "Holiday Market",
+  season: "winter",
+  description: "Shop local artisans, farm-made gifts, and holiday decorations.",
+  image: "holiday.png",
+  dates: "First three weekends of December"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Christmas Trees & Wreaths",
-    season: "winter",
-    description: "Choose-and-cut or pre-cut Christmas trees along with fresh handmade wreaths.",
-    image: "christmas.png",
-    dates: "December"
-  },
+{
+  name: "Christmas Trees & Wreaths",
+  season: "winter",
+  description: "Choose-and-cut or pre-cut Christmas trees along with fresh handmade wreaths.",
+  image: "christmas.png",
+  dates: "December"
+},
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 
-  {
-    name: "Farm Store",
-    season: "winter",
-    description: "Our farm store remains open year-round with seasonal products and gifts.",
-    image: "estore.png",
-    dates: "January through March (reduced hours)"
-  }
+{
+  name: "Farm Store",
+  season: "winter",
+  description: "Our farm store remains open year-round with seasonal products and gifts.",
+  image: "estore.png",
+  dates: "January through March (reduced hours)"
+}
+  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
 ];
 
 //  CREATE CARD — builds one event card element

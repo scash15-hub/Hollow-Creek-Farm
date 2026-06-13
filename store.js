@@ -6,6 +6,8 @@ const farmProducts = [
     description: "Farm-fresh eggs available year-round from our 200-hen flock.",
     image: "eggs.png",
     displayNote: "From the 200-hen flock"
+    //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   },
   {
     name: "Raw Honey",
@@ -13,6 +15,8 @@ const farmProducts = [
     description: "Local raw honey harvested from three on-site hives. Unfiltered and full of flavor.",
     image: "rawhoney.png",
     displayNote: "From farm hives"
+    //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   },
   {
     name: "Strawberry Preserves",
@@ -20,6 +24,8 @@ const farmProducts = [
     description: "Small-batch preserves made in-house with strawberries from our spring u-pick fields.",
     image: "strawberrypreserves.png",
     displayNote: "Made in-house"
+    //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   },
   {
     name: "Blueberry Preserves",
@@ -28,6 +34,8 @@ const farmProducts = [
     image: "blueberrypreserves.png",
     displayNote: "Made in-house"
   },
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   {
     name: "Fresh Apple Cider",
     category: "seasonal",
@@ -35,6 +43,8 @@ const farmProducts = [
     image: "applecider.png",
     displayNote: "Available in fall"
   },
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   {
     name: "Sourdough Bread",
     category: "baked goods",
@@ -42,6 +52,8 @@ const farmProducts = [
     image: "sourdough.png",
     displayNote: "Weekends only"
   },
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   {
     name: "Apple Pie",
     category: "baked goods",
@@ -49,6 +61,8 @@ const farmProducts = [
     image: "pie.png",
     displayNote: "Weekends only"
   },
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   {
     name: "Seasonal Produce Basket",
     category: "seasonal",
@@ -56,6 +70,8 @@ const farmProducts = [
     image: "basket.png",
     displayNote: "Changes by season"
   },
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+
   {
     name: "Beeswax Candles",
     category: "local goods",
@@ -63,6 +79,8 @@ const farmProducts = [
     image: "beeswax.png",
     displayNote: "From farm hives"
   },
+  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
+
   {
     name: "Branded Tote Bag",
     category: "merchandise",
@@ -70,6 +88,8 @@ const farmProducts = [
     image: "tote.png",
     displayNote: "HCF merch"
   }
+  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
+
 ];
 
 

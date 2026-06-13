@@ -10,6 +10,7 @@
 .contact-hero {
   background: url("contactbanner.png") center / cover no-repeat;
 }
+/*Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use.*/
 
 .contact-hero::before {
   content: "";
