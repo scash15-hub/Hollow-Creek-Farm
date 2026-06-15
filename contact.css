@@ -26,7 +26,7 @@
 }
 
 .page-hero-content .section-eyebrow {
-  color: var(--hcf-gold);
+  color: var(--hcf- brown);
 }
 
 .page-hero-content h1 {
@@ -58,7 +58,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--hcf-gold);
+  color: var(--hcf-brown);
   margin-bottom: 6px;
 }
 
