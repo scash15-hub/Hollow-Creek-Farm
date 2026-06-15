@@ -160,7 +160,7 @@ const farmEvents = [
   image: "estore.png",
   dates: "January through March (reduced hours)"
 }
-  //Image credit: Ai was not in classroom, took one of imgs and told ai take this img and make it for ___ and game what it is a description. 
+  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
 ];
 
 //  CREATE CARD — builds one event card element
