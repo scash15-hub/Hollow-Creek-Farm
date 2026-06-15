@@ -4,6 +4,7 @@ const farmProducts = [
     name: "Fresh Eggs",
     category: "dairy & eggs",
     description: "Farm-fresh eggs available year-round from our 200-hen flock.",
+    price: 6.00,
     image: "eggs.png",
     displayNote: "From the 200-hen flock"
     //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
@@ -13,6 +14,7 @@ const farmProducts = [
     name: "Raw Honey",
     category: "pantry",
     description: "Local raw honey harvested from three on-site hives. Unfiltered and full of flavor.",
+    price: 10.00,
     image: "rawhoney.png",
     displayNote: "From farm hives"
     //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
@@ -22,6 +24,7 @@ const farmProducts = [
     name: "Strawberry Preserves",
     category: "pantry",
     description: "Small-batch preserves made in-house with strawberries from our spring u-pick fields.",
+    price: 8.00,
     image: "strawberrypreserves.png",
     displayNote: "Made in-house"
     //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
@@ -31,6 +34,7 @@ const farmProducts = [
     name: "Blueberry Preserves",
     category: "pantry",
     description: "Small-batch preserves made from peak-season blueberries picked right here on the farm.",
+    price: 9.00,
     image: "blueberrypreserves.png",
     displayNote: "Made in-house"
   },
@@ -40,6 +44,7 @@ const farmProducts = [
     name: "Fresh Apple Cider",
     category: "seasonal",
     description: "Fresh cider pressed on-site using apples from our orchard. Sold by the jug.",
+    price: 9.00,
     image: "applecider.png",
     displayNote: "Available in fall"
   },
@@ -49,6 +54,7 @@ const farmProducts = [
     name: "Sourdough Bread",
     category: "baked goods",
     description: "Fresh-baked sourdough loaves available every weekend while supplies last.",
+    price: 7.00,
     image: "sourdough.png",
     displayNote: "Weekends only"
   },
@@ -58,6 +64,7 @@ const farmProducts = [
     name: "Apple Pie",
     category: "baked goods",
     description: "Farm-made pie baked with seasonal apples. A Hollow Creek Farm favorite every fall.",
+    price: 18.00,
     image: "pie.png",
     displayNote: "Weekends only"
   },
@@ -67,6 +74,7 @@ const farmProducts = [
     name: "Seasonal Produce Basket",
     category: "seasonal",
     description: "A rotating selection of fresh produce straight from the farm fields. Changes each week.",
+    price: 20.00,
     image: "basket.png",
     displayNote: "Changes by season"
   },
@@ -76,6 +84,7 @@ const farmProducts = [
     name: "Beeswax Candles",
     category: "local goods",
     description: "Handmade candles crafted from beeswax harvested right here at Hollow Creek Farm.",
+    price: 12.00,
     image: "beeswax.png",
     displayNote: "From farm hives"
   },
@@ -85,6 +94,7 @@ const farmProducts = [
     name: "Branded Tote Bag",
     category: "merchandise",
     description: "A sturdy reusable tote featuring the Hollow Creek Farm brand. Perfect for market days.",
+    price: 15.00,
     image: "tote.png",
     displayNote: "HCF merch"
   }
@@ -120,6 +130,10 @@ const createProductCard = (product) => {
   const body = document.createElement("div");
   body.className = "product-card-body";
 
+  const priceTag = document.createElement("span");
+  priceTag.className = "product-price";
+  priceTag.textContent = `$${product.price.toFixed(2)}`;
+
   const tag = document.createElement("span");
   tag.className = "product-tag";
   tag.textContent = product.category;
@@ -153,6 +167,7 @@ const createProductCard = (product) => {
   // put body together
   body.appendChild(tag);
   body.appendChild(title);
+  body.appendChild(priceTag);
   body.appendChild(note);
   body.appendChild(desc);
   body.appendChild(btn);

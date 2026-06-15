@@ -160,8 +160,28 @@ const farmEvents = [
   image: "estore.png",
   dates: "January through March (reduced hours)"
 }
-  //Image credit: Provided Hollow Creek Farm asset folder.Licensed for class use. 
+  //Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. 
 ];
+
+// Season hours mapping (used to display hours when a season is selected)
+const seasonHours = {
+  winter: "Winter: Saturday and Sunday 10am-4pm, December through March (Holiday Market is only in December)",
+  spring: "Spring: Saturday and Sunday 9am-5pm, April through September",
+  summer: "Summer: Saturday and Sunday 9am-5pm, July through August",
+  fall: "Fall: Monday to Friday 1pm-6pm, Saturday and Sunday 9am-6pm, September through November"
+};
+
+const updateSeasonHours = (filter) => {
+  const el = document.getElementById("season-hours");
+  if (!el) return;
+  if (filter === "all") {
+    el.classList.add("d-none");
+    el.textContent = "";
+  } else {
+    el.classList.remove("d-none");
+    el.textContent = seasonHours[filter] || "";
+  }
+};
 
 //  CREATE CARD — builds one event card element
 const createCard = (event) => {
@@ -271,6 +291,7 @@ const initFilter = () => {
 
       // re-render with the selected season
       renderEvents(btn.dataset.filter);
+      updateSeasonHours(btn.dataset.filter);
     });
   });
 };
@@ -279,4 +300,5 @@ const initFilter = () => {
 document.addEventListener("DOMContentLoaded", () => {
   renderEvents("all");
   initFilter();
+  updateSeasonHours("all");
 });

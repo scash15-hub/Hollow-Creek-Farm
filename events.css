@@ -59,6 +59,15 @@
   margin-bottom: 56px;
 }
 
+/* Season hours text shown under the filter buttons */
+.season-hours {
+  font-family: "farmhand-inline", serif;
+  font-size: 1rem;
+  color: var(--hcf-text);
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+
 .filter-btn {
   font-family: "drunk-cowboy", sans-serif;
   font-size: 1.05rem;
